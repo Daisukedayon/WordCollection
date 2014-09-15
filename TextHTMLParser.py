@@ -24,3 +24,6 @@ class TestHTMLParser(HTMLParser):
     	if self.is_a is True:
             self.WordArray.append(data)
         	#print(data)
+
+    def returnWordArray():
+        return self.returnWordArray
