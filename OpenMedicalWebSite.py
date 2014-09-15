@@ -18,12 +18,8 @@ class TestHTMLParser(HTMLParser):
     		class_val = "crosslink"
     		if "class" in attrs:
     			if class_val == attrs["class"]:
-    			
-    				self.is_a = True
-        # attrs = dict(attrs) # タプルだと扱いにくいので辞書にする
-        # print 'start', tag
-        # if 'div' == tag and 'class' in attrs:
-        #      print '-->', attrs['class']
+      				self.is_a = True
+
 
     def handle_endtag(self, tag):
     	if tag.lower() == "a":
