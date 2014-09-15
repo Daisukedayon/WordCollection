@@ -7,6 +7,9 @@ import urllib2
 #import HTMLParser
 from HTMLParser import HTMLParser, HTMLParseError
 
+
+from MedicalWordURLCollection import MedicalWordURLStore
+
 class TestHTMLParser(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
@@ -30,8 +33,7 @@ class TestHTMLParser(HTMLParser):
         	print(data)
 
 
-
-
+URLCollection = ['http://ejje.weblio.jp/category/healthcare/eigky/aa']
 
 
 
