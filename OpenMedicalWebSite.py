@@ -5,7 +5,7 @@
 import urllib2
 
 #import HTMLParser
-
+from TextHTMLParser import TestHTMLParser
 
 
 from MedicalWordURLCollection import MedicalWordURLStore
