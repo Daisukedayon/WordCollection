@@ -98,7 +98,8 @@ class MedicalWordURLStore:
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/13',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/14',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/15',
-		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/16',]
+		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/16',
+		           ]
 
 
 		return ReturnArray
