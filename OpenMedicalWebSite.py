@@ -19,8 +19,9 @@ URLCollection = MedicalWordURLStore().ReturnURLArray()
 
 
 for url in URLCollection:
-    if not url.match('https?://[\w/:%#\$&\?\(\)~\.=\+\-]+'):
-        print url 
+    if not url.match(
+        print url +"don't matches URL"
+        
     response = url
     html = response.read()
     parser = TestHTMLParser()
