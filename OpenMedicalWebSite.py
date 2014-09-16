@@ -18,6 +18,20 @@ from StoreToText import StoreToFile_class
 URLCollection = MedicalWordURLStore().ReturnURLArray()
 
 
+for url in URLCollection:
+    if not url.match('https?://[\w/:%#\$&\?\(\)~\.=\+\-]+'):
+        print url 
+    response = url
+    html = response.read()
+    parser = TestHTMLParser()
+    parser.feed(html)
+    StoreToFile_class().fromArrayToFile(parser.returnWordArray(),"MedicalWordText")
+
+
+parser.close()
+    
+
+
 response = urllib2.urlopen('http://ejje.weblio.jp/category/healthcare/eigky/aa')
 html = response.read()
 
