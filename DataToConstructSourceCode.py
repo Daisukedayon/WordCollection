@@ -6,7 +6,7 @@ class DataToConstructSource:
 		self.ArrayOf_OneArraySourceCode = []
 		self.ConstructSpecifiedLanguageSourceCode = None
 
-	def add_OneArrayOfSourceCode(self.onearray):
+	def add_OneArrayOfSourceCode(self,onearray):
 		if not isinstance(onearray,OneArrayOfSourceCode):
 			print "Error:Object is not OneArrayOfSourceCode\n"
 			return 

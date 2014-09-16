@@ -2,11 +2,13 @@ from DataToConstructSourceCode  import DataToConstructSource
 
 
 class MedicalWordURLStore:
-	#def __init__(self):
-
+	def __init__(self):
+		self.aaArray = []
+		self.iiArray	
+	
 	def ReturnDataStructre(self):
 		aaURL =OneArrayOfSourceCode()
-		aaURL.addURLArray(aaURL)
+		aaURL.addURLArray(self.aaArray)
 
 
 	def ReturnURLArray(self):
@@ -18,8 +20,8 @@ class MedicalWordURLStore:
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/5',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/6',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/7']
-		ReturnArray.append(aaArray)
-		iiArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ii',
+		ReturnArray.append(self.aaArray)
+		self.iiArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ii',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/4',
@@ -29,22 +31,22 @@ class MedicalWordURLStore:
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/8',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/9']
 		ReturnArray.append(iiArray)
-		uuArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/uu',
+		self.uuArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/uu',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/4']
 		ReturnArray.append(uuArray)
-		eeArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ee',
+		self.eeArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ee',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/4']
 		ReturnArray.append(eeArray)
-		ooArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/oo',
+		self.ooArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/oo',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/4']
 		ReturnArray.append(ooArray)
-		kaArray   = ['http://ejje.weblio.jp/category/healthcare/eigky/ka',
+		self.kaArray   = ['http://ejje.weblio.jp/category/healthcare/eigky/ka',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/2',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/3',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/4',
@@ -62,7 +64,7 @@ class MedicalWordURLStore:
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/16',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/17']
 		ReturnArray.append(kaArray)
-		kiArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ki',
+		self.kiArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ki',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/4',
@@ -77,12 +79,12 @@ class MedicalWordURLStore:
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/13',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/14']
 		ReturnArray.append(kiArray)
-		kuArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ku',
+		self.kuArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ku',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/4']
 		ReturnArray.append(kuArray)
-		KeArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ke',
+		self.KeArray  = ['http://ejje.weblio.jp/category/healthcare/eigky/ke',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/4',
@@ -93,7 +95,7 @@ class MedicalWordURLStore:
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/9',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/10']
 		ReturnArray.append(KeArray)
-		KoArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ko',
+		self.KoArray = ['http://ejje.weblio.jp/category/healthcare/eigky/ko',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/4',
