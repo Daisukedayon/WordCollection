@@ -25,5 +25,5 @@ class TestHTMLParser(HTMLParser):
             self.WordArray.append(data)
         	#print(data)
 
-    def returnWordArray():
-        return self.returnWordArray
+    def returnWordArray(self):
+        return self.WordArray

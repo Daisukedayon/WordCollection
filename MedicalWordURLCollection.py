@@ -1,5 +1,7 @@
 class MedicalWordURLStore:
-	def ReturnURLArray():
+	#def __init__(self):
+
+	def ReturnURLArray(cls):
 		ReturnArray = []
 		aaArray = ['http://ejje.weblio.jp/category/healthcare/eigky/aa',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/2',
