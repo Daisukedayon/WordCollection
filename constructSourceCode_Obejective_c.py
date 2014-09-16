@@ -74,15 +74,14 @@ class constructSourceCode_Obejective_c:
 		Code = "return WordStore;\n"
 		SourceCode += Code
 		print SourceCode
-		out_f = open(filename,'w')
+		#out_f = open(filename,'w')
 		
-
 		
 		#Source = unicode(SourceCode,encoding='utf-8')
 		
 		
-		out_f.write(SourceCode.encode('UTF-8'))
-		out_f.close()
+		#out_f.write(SourceCode.encode('UTF-8'))
+		#out_f.close()
 				
 		
 
