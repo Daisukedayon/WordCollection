@@ -1,9 +1,17 @@
+from DataToConstructSourceCode  import DataToConstructSource
+
+
 class MedicalWordURLStore:
 	#def __init__(self):
 
-	def ReturnURLArray(cls):
+	def ReturnDataStructre(self):
+		aaURL =OneArrayOfSourceCode()
+		aaURL.addURLArray(aaURL)
+
+
+	def ReturnURLArray(self):
 		ReturnArray = []
-		aaArray = ['http://ejje.weblio.jp/category/healthcare/eigky/aa',
+		self.aaArray = ['http://ejje.weblio.jp/category/healthcare/eigky/aa',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/4',
