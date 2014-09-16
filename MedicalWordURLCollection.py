@@ -1,39 +1,23 @@
+# -*- coding: utf-8 -*-
 from DataToConstructSourceCode  import DataToConstructSource
 
 
-class MedicalWordURLStore:
-	def __init__(self):
-		self.aaArray = []
-		self.iiArray	
-	
-	def ReturnDataStructre(self):
-		aaURL =OneArrayOfSourceCode()
-		aaURL.addURLArray(self.aaArray)
-		aaURL.setDescriptionn("「あ」行の言葉")
-		
-		iiURL = OneArrayOfSourceCode()
-		iiURL.addURLArray(self.iiArray)
-		iiURL.setDescription("「い」行の言葉")
-		
-		uuURL = OneArrayOfSourceCode()
-		uuURL.addURLArray(self.uuArray)
-		uuURL.setDescription("「う」行の言葉")
-		
-		#ここ中止
+class MedicalWordURLStore:	
 
 
 	def ReturnURLArray(self):
 		ReturnArray = []
-		aaArray = ['「あ」行の言葉',
-				   'http://ejje.weblio.jp/category/healthcare/eigky/aa',
-		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/2',
+		aaArray = [u'「あ」行の言葉',
+				   'http://ejje.weblio.jp/category/healthcare/eigky/aa']
+		other = ['http://ejje.weblio.jp/category/healthcare/eigky/aa/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/4',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/5',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/6',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/aa/7']
-		ReturnArray.append(self.aaArray)
-		self.iiArray = ['「い」行の言葉',
+		ReturnArray.extend(aaArray)
+		return ReturnArray
+	"""	iiArray = [u'「い」行の言葉',
 					'http://ejje.weblio.jp/category/healthcare/eigky/ii',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/3',
@@ -43,26 +27,26 @@ class MedicalWordURLStore:
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/7',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/8',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ii/9']
-		ReturnArray.append(iiArray)
-		self.uuArray  = ['「う」行の言葉',
+		ReturnArray.extend(iiArray)
+		uuArray  = [u'「う」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/uu',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/uu/4']
-		ReturnArray.append(uuArray)
-		self.eeArray  = ['「え」行の言葉',
+		ReturnArray.extend(uuArray)
+		eeArray  = [u'「え」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/ee',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ee/4']
-		ReturnArray.append(eeArray)
-		self.ooArray  = ['「お」行の言葉',
+		ReturnArray.extend(eeArray)
+		ooArray  = [u'「お」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/oo',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/3',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/oo/4']
-		ReturnArray.append(ooArray)
-		self.kaArray   = ['「か」行の言葉'
+		ReturnArray.extend(ooArray)
+		kaArray   = [u'「か」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/ka',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/2',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/3',
@@ -80,8 +64,8 @@ class MedicalWordURLStore:
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/15',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/16',
 		             'http://ejje.weblio.jp/category/healthcare/eigky/ka/17']
-		ReturnArray.append(kaArray)
-		self.kiArray  = ['「き」行の言葉',
+		ReturnArray.extend(kaArray)
+		kiArray  = [u'「き」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/ki',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/3',
@@ -96,14 +80,14 @@ class MedicalWordURLStore:
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/12',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/13',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ki/14']
-		ReturnArray.append(kiArray)
-		self.kuArray = ['「く」行の言葉',
+		ReturnArray.extend(kiArray)
+		kuArray = [u'「く」行の言葉',
 					'http://ejje.weblio.jp/category/healthcare/eigky/ku',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/3',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ku/4']
-		ReturnArray.append(kuArray)
-		self.KeArray  = ['「け」行の言葉',
+		ReturnArray.extend(kuArray)
+		KeArray  = [u'「け」行の言葉',
 						'http://ejje.weblio.jp/category/healthcare/eigky/ke',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/2',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/3',
@@ -114,8 +98,8 @@ class MedicalWordURLStore:
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/8',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/9',
 		            'http://ejje.weblio.jp/category/healthcare/eigky/ke/10']
-		ReturnArray.append(KeArray)
-		self.KoArray = ['「こ」行の言葉',
+		ReturnArray.extend(KeArray)
+		KoArray = [u'「こ」行の言葉',
 					'http://ejje.weblio.jp/category/healthcare/eigky/ko',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/2',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/3',
@@ -133,6 +117,5 @@ class MedicalWordURLStore:
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/15',
 		           'http://ejje.weblio.jp/category/healthcare/eigky/ko/16',
 		           ]
-
-
-		return ReturnArray
+		"""
+		

@@ -12,12 +12,21 @@ from MedicalWordURLCollection import MedicalWordURLStore
 
 from StoreToText import StoreToFile_class
 
+from constructSourceCode_Obejective_c import constructSourceCode_Obejective_c
+
 
 
 
 URLCollection = MedicalWordURLStore().ReturnURLArray()
 
+construct = constructSourceCode_Obejective_c()
 
+construct.SetDataToConstructSource(URLCollection)
+construct.ConstructAndOutputArray("/Users/okadaisuke/Desktop/WordStore.txt")
+
+
+
+"""
 for url in URLCollection:
     if not url.match(
         print url +"don't matches URL"
@@ -42,4 +51,6 @@ StoreToFile_class().fromArrayToFile(parser.returnWordArray(),"MedicalWordText")
 
 
 parser.close()
+
+"""
 
