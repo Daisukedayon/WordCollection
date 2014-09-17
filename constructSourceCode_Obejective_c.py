@@ -19,16 +19,20 @@ class constructSourceCode_Obejective_c:
 		import re
 		import urllib2
 		SourceCode = u""
-		Code = u"NSMutableArray *WordStore = [[NSMutableArray alloc] init];\n"
-		SourceCode += Code
+		#Code = u"NSMutableArray *WordStore = [[NSMutableArray alloc] init];\n"
+		#SourceCode += Code
 		
-		URL = self.DataSource.pop(0)
+		URL = self.DataSource[0]
 		if re.match(r'https?://[\w/:%#\$&\?\(\)~\.=\+\-]+',URL) == None:
 			URL = "//" +URL + "\n"
 			SourceCode += URL
 			print 'don\'t match URL Regular Expression:' + URL
+			self.DataSource.pop(0)
+			
+		Code = self.DataSource[0]
+		SourceCode += "//"+Code + "\n" 
 		
-		Code = "NSArray *WordArray1 = @["
+		Code = "WordArray = @["
 		SourceCode += Code
 		
 		Count = 1
@@ -39,6 +43,7 @@ class constructSourceCode_Obejective_c:
 				SourceCode += Code
 				break
 			URL = self.DataSource.pop(0);
+			
 			if  re.match(r'https?://[\w/:%#\$&\?\(\)~\.=\+\-]+',URL) == None:
 				Code = "];\n"
 				SourceCode += Code
@@ -71,7 +76,7 @@ class constructSourceCode_Obejective_c:
 					print "Warning:Format is not good"
 			SourceCode = SourceCode[:-1] 
 		
-		Code = "return WordStore;\n"
+		Code = "[WordStore addObjectsFromArray:WordArray];\n"
 		SourceCode += Code
 		print SourceCode
 		#out_f = open(filename,'w')

@@ -17,7 +17,8 @@ from constructSourceCode_Obejective_c import constructSourceCode_Obejective_c
 
 
 
-URLCollection = MedicalWordURLStore().ReturnURLArray()
+#URLCollection = MedicalWordURLStore().ReturnURLArray()
+URLCollection = ['http://ejje.weblio.jp/category/healthcare/eigky/oo']
 
 construct = constructSourceCode_Obejective_c()
 
