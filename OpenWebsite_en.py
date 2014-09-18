@@ -24,8 +24,3 @@ construct = constructSourceCode_Obejective_c()
 
 construct.SetDataToConstructSource(URLCollection)
 construct.ConstructAndOutputArray("/Users/okadaisuke/Desktop/WordStore.txt")
-
-
-
-
-
