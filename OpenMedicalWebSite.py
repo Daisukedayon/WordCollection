@@ -18,7 +18,7 @@ from constructSourceCode_Obejective_c import constructSourceCode_Obejective_c
 
 
 #URLCollection = MedicalWordURLStore().ReturnURLArray()
-URLCollection = ['http://ejje.weblio.jp/category/healthcare/eigky/oo']
+URLCollection = ['http://ejje.weblio.jp/category/healthcare/eigky/zi/5']
 
 construct = constructSourceCode_Obejective_c()
 
@@ -27,31 +27,5 @@ construct.ConstructAndOutputArray("/Users/okadaisuke/Desktop/WordStore.txt")
 
 
 
-"""
-for url in URLCollection:
-    if not url.match(
-        print url +"don't matches URL"
-        
-    response = url
-    html = response.read()
-    parser = TestHTMLParser()
-    parser.feed(html)
-    StoreToFile_class().fromArrayToFile(parser.returnWordArray(),"MedicalWordText")
 
-
-parser.close()
-    
-
-
-response = urllib2.urlopen('http://ejje.weblio.jp/category/healthcare/eigky/aa')
-html = response.read()
-
-parser = TestHTMLParser()
-parser.feed(html)
-StoreToFile_class().fromArrayToFile(parser.returnWordArray(),"MedicalWordText")
-
-
-parser.close()
-
-"""
 
