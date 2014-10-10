@@ -1,7 +1,7 @@
 from TextHTMLParser import TestHTMLParser
 from _curses import ERR
 
-class constructSourceCode_Obejective_c:
+class constructSourceCode_Objective_c_En:
     def __init__(self):
         self.DataSource = []
 
@@ -15,7 +15,7 @@ class constructSourceCode_Obejective_c:
             ascii_text = str(obj).encode('string_escape')
             return unicode(ascii_text)
 
-    def ConstructAndOutputArray(self,filename):
+    def ConstructAndOutputArray(self):
         import re
         import urllib2
         SourceCode = u""
@@ -47,7 +47,7 @@ class constructSourceCode_Obejective_c:
             if  re.match(r'https?://[\w/:%#\$&\?\(\)~\.=\+\-]+',URL) == None:
                 Code = "];\n"
                 SourceCode += Code
-                Code = "[WordStore addObjectFromArray:WordArray" + str(Count) +"];\n" 
+                Code = "[WordStore addObjectFromArray:WordArray];\n" 
                 SourceCode += Code
                 Count += 1
                 URL = "//"+URL + "\n"
@@ -68,7 +68,7 @@ class constructSourceCode_Obejective_c:
             for word in parser.returnWordArray():
                 try:
                     #self.safe_unicode(word)
-                    if re.match(r'[^\x01-\x7E]',word): 
+                    if re.match('/^[a-zA-Z\s]+$/',word): 
                         print unicode(word,encoding='utf-8')
                         #unicode(word,encoding='utf-8')
                         SourceCode += '@\"' + unicode(word,encoding='utf-8') + '\",'
